@@ -3,10 +3,10 @@
 // ─────────────────────────────────────────────────────────────
 
 export const SITE = {
-  title: 'J. Smith',          // your name / handle — used in header & titles
+  title: 'Ioan',          // your name / handle — used in header & titles
   description:
     'Penetration testing across internal infrastructure, Active Directory and cloud. Lab write-ups, methodology notes, and the occasional opinion.',
-  author: 'J. Smith',
+  author: 'I. Thomas',
   role: 'Penetration Tester', // used in page <title> metadata
   location: 'United Kingdom',
   // Hero headline. Words in [brackets] get the redaction-reveal treatment.
@@ -34,18 +34,11 @@ export const LINKS = [
 ];
 
 export const PROJECTS = [
-  {
-    name: 'AD Lab Automation',
-    description:
-      'Terraform + Ansible lab that spins up a small Active Directory estate with common misconfigurations for practising tradecraft safely.',
-    url: 'https://github.com/yourusername/ad-lab',
-    tags: ['Terraform', 'Active Directory', 'Lab'],
-  },
-  {
-    name: 'Engagement Note Templates',
-    description:
-      'Markdown templates for internal and cloud engagements: scoping, evidence capture and report-ready finding write-ups.',
-    url: 'https://github.com/yourusername/engagement-notes',
-    tags: ['Methodology', 'Reporting'],
-  },
+  //{
+   // name: 'AD Lab Automation',
+    //description:
+      //'Terraform + Ansible lab that spins up a small Active Directory estate with common misconfigurations for practising tradecraft safely.',
+    //url: 'https://github.com/yourusername/ad-lab',
+    //tags: ['Terraform', 'Active Directory', 'Lab'],
+  //},
 ];
