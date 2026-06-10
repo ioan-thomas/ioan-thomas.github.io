@@ -1,4 +1,4 @@
-# Offensive Security Blog / Portfolio
+# Offensive Security Blog / Portfolio.
 
 Personal blog and portfolio built with [Astro](https://astro.build), styled like an engagement dossier. Deploys to GitHub Pages automatically on every push.
 
