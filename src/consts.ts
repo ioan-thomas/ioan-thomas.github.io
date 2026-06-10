@@ -18,6 +18,7 @@ export const CERTS = [
   { name: 'CRTO', org: 'Zero-Point Security', year: '2025', status: 'held' },
   { name: 'CRTL', org: 'Zero-Point Security', year: '—', status: 'target' },
   { name: 'OSEP', org: 'OffSec', year: '—', status: 'target' },
+  { name: 'CPSA & CRT', org: 'Crest', year: '—', status: 'target' }
 ];
 
 export const FOCUS_AREAS = [
