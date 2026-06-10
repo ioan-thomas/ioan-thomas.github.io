@@ -23,7 +23,7 @@ export const CERTS = [
 
 export const FOCUS_AREAS = [
   'Internal infrastructure',
-  'Active Directory',
+  'Maldev',
   'Cloud (Azure / AWS)',
   'Adversary simulation',
 ];
