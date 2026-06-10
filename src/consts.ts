@@ -18,7 +18,7 @@ export const CERTS = [
   { name: 'CRTO', org: 'Zero-Point Security', year: '2025', status: 'held' },
   { name: 'CRTL', org: 'Zero-Point Security', year: '—', status: 'target' },
   { name: 'OSEP', org: 'OffSec', year: '—', status: 'target' },
-  { name: 'CPSA & CRT', org: 'Crest', year: '—', status: 'target' }
+  { name: 'CPSA & CRT', org: 'CREST', year: '—', status: 'target' }
 ];
 
 export const FOCUS_AREAS = [
@@ -29,9 +29,9 @@ export const FOCUS_AREAS = [
 ];
 
 export const LINKS = [
-  { label: 'GitHub', url: 'https://github.com/yourusername' },
-  { label: 'LinkedIn', url: 'https://linkedin.com/in/yourusername' },
-  { label: 'Email', url: 'mailto:you@example.com' },
+  { label: 'GitHub', url: 'https://github.com/ioan-thomas' },
+  { label: 'LinkedIn', url: 'https://linkedin.com/in/ioanthomas1/' },
+  { label: 'X', url: 'https://x.com/_i04n' },
 ];
 
 export const PROJECTS = [
