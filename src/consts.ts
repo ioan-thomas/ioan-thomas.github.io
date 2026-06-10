@@ -16,9 +16,9 @@ export const SITE = {
 export const CERTS = [
   { name: 'OSCP', org: 'OffSec', year: '2024', status: 'held' },
   { name: 'CRTO', org: 'Zero-Point Security', year: '2025', status: 'held' },
+  { name: 'CPSA & CRT', org: 'CREST', year: '—', status: 'target' },
   { name: 'CRTL', org: 'Zero-Point Security', year: '—', status: 'target' },
-  { name: 'OSEP', org: 'OffSec', year: '—', status: 'target' },
-  { name: 'CPSA & CRT', org: 'CREST', year: '—', status: 'target' }
+  { name: 'OSEP', org: 'OffSec', year: '—', status: 'target' }
 ];
 
 export const FOCUS_AREAS = [
