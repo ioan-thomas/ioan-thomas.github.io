@@ -3,7 +3,7 @@
 // ─────────────────────────────────────────────────────────────
 
 export const SITE = {
-  title: 'Ioan',          // your name / handle — used in header & titles
+  title: 'i04n',          // your name / handle — used in header & titles
   description:
     'Penetration testing across internal infrastructure, Active Directory and cloud. Lab write-ups, methodology notes, and the occasional opinion.',
   author: 'I. Thomas',
@@ -31,7 +31,7 @@ export const FOCUS_AREAS = [
 export const LINKS = [
   { label: 'GitHub', url: 'https://github.com/ioan-thomas' },
   { label: 'LinkedIn', url: 'https://linkedin.com/in/ioanthomas1/' },
-  { label: 'X', url: 'https://x.com/_i04n' },
+  { label: '𝕏', url: 'https://x.com/_i04n' },
 ];
 
 export const PROJECTS = [
