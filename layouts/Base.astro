@@ -1,0 +1,92 @@
+---
+import { SITE, LINKS } from '../consts';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description = SITE.description } = Astro.props;
+const pageTitle = title ? `${title} — ${SITE.title}` : `${SITE.title} — ${SITE.role}`;
+const { pathname } = Astro.url;
+const base = import.meta.env.BASE_URL;
+const nav = [
+  { href: base, label: 'home' },
+  { href: `${base.replace(/\/$/, '')}/blog/`, label: 'blog' },
+  { href: `${base.replace(/\/$/, '')}/about/`, label: 'about' },
+];
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" href={`${base.replace(/\/$/, '')}/favicon.svg`} type="image/svg+xml" />
+    <link rel="sitemap" href={`${base.replace(/\/$/, '')}/sitemap-index.xml`} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={SITE.title}
+      href={`${base.replace(/\/$/, '')}/rss.xml`}
+    />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <div class="class-strip">
+      <div class="wrap">
+        <span class="tlp">TLP:CLEAR</span>
+        <span class="meta-right">{SITE.location} · personal site · views my own</span>
+      </div>
+    </div>
+
+    <header class="site">
+      <div class="wrap">
+        <a class="site-title" href={base}>{SITE.title}<span class="dot">.</span></a>
+        <nav class="main" aria-label="Main">
+          {
+            nav.map((item) => (
+              <a
+                href={item.href}
+                aria-current={
+                  pathname === item.href || (item.label !== 'home' && pathname.startsWith(item.href))
+                    ? 'page'
+                    : undefined
+                }
+              >
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <slot />
+    </main>
+
+    <footer class="site">
+      <div class="wrap">
+        <span>© {year} {SITE.author}</span>
+        {LINKS.length > 0 && (
+          <span>
+            {LINKS.map((l, i) => (
+              <>
+                <a href={l.url} rel="me noopener">{l.label}</a>
+                {i < LINKS.length - 1 && ' · '}
+              </>
+            ))}
+          </span>
+        )}
+      </div>
+    </footer>
+  </body>
+</html>
